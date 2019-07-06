@@ -139,12 +139,12 @@ Doubles are presenting a major problem.
 07/05/2019
 Changes:
 -double --> BigInteger
+-setup GitHub
 What works?
 -The 11 & 12 digit tests run in under 2 seconds, WOW
 What doesn't work?
 -same
 What's next?
-Use Git
 Maven
 CI (Travis CI)
 Try 100 zeroes
