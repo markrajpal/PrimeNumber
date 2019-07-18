@@ -1,5 +1,6 @@
 package prime;
 
+import org.apache.log4j.Logger;
 import utilities.Helper;
 
 import java.math.BigInteger;
@@ -16,6 +17,8 @@ public class Prime {
     public BigInteger latestPotentialPrimeNumber = BigInteger.ZERO;
     public PrimeRunnable primeRunnableEvaluation = new PrimeRunnable();
     public BigInteger unitTestThreshhold = new BigInteger("1000000000");
+
+    final static Logger logger = Logger.getLogger(Prime.class);
 
     public BigInteger findSmallestWithNZeroes(int numberOfZeroes) {
         BigInteger smallestNumber = Helper.smallestNumber(numberOfZeroes);
@@ -55,12 +58,12 @@ public class Prime {
                     break;
                 }
                 if (smallestPrimeFoundValidated) {
-                    System.out.printf("smallest number is: %d\n", primeRunnableEvaluation.smallestPrimeFound);
+                    logger.info("smallest number is: " + primeRunnableEvaluation.smallestPrimeFound);
                     return primeRunnableEvaluation.smallestPrimeFound;
                 }
 
             } else if (primeRunnableEvaluation.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
-                System.out.printf("currentPotentialPrime %d\n", latestPotentialPrimeNumber);
+                logger.info("currentPotentialPrime " + latestPotentialPrimeNumber);
                 threadCounter = initiateThreads(threadCounter, smallestNumber);
             }
             //not sure why this is needed

@@ -77,6 +77,7 @@ public class PrimeUnitTest extends TestCase {
         Double secondNumber = 1d;
 
         //This is why we can't use doubles
+        //Is this a Java Bug???
         assertEquals(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001d, Helper.doubleAddition(firstNumber, secondNumber));
         assertEquals(10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000d, Helper.doubleAddition(firstNumber, secondNumber));
     }
