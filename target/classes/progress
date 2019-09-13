@@ -158,3 +158,55 @@ Thread the for loop in isPrime
 07/08/2019
 After running the 100 digit test for a few days it is evident I need to incorporate a new primality test
 
+07/17/2019
+Changes:
+Added Maven support
+Added log4j which provided date/time
+What works?
+same
+What doesn't work?
+-same
+What's next?
+CI (Travis CI)
+Try 100 zeroes
+Support for an actual start position so we don't have to start over everytime
+Rename PrimeRunnable to PrimeThread
+Find a new primality test (possibly Miller-Rabin)
+Thread the for loop in isPrime
+
+07/26/2019
+Changes:
+-none
+What works?
+-same
+What doesn't work?
+-same
+What's next?
+CI (Travis CI)
+Try 100 zeroes
+Support for an actual start position so we don't have to start over everytime
+Rename PrimeRunnable to PrimeThread
+Find a new primality test (possibly Miller-Rabin)
+Thread the for loop in isPrime
+Add Static Analysis:
+https://maven.apache.org/plugins/maven-pmd-plugin/usage.html
+https://spotbugs.readthedocs.io/en/latest/maven.html
+https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
+
+09/12/2019
+Changes:
+-Added PMD
+What works?
+-same
+What doesn't work?
+-same
+What's next?
+CI (Travis CI)
+Try 100 zeroes
+Support for an actual start position so we don't have to start over everytime
+Rename PrimeRunnable to PrimeThread
+Find a new primality test (possibly Miller-Rabin)
+Thread the for loop in isPrime
+Add Static Analysis:
+https://spotbugs.readthedocs.io/en/latest/maven.html
+https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html

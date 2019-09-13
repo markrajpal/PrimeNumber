@@ -9,16 +9,17 @@ import java.util.Collections;
 import java.util.Iterator;
 
 /**
- * Created by mark on 2019-06-01.
+ * Created by Mark Rajpal on 2019-06-01.
+ * Ideally this class will function as the hub in order to calculate really large prime numbers
  */
 public class Prime {
 
-    public static BigInteger concurrentThreads = BigInteger.TEN;
-    public BigInteger latestPotentialPrimeNumber = BigInteger.ZERO;
-    public PrimeRunnable primeRunnableEvaluation = new PrimeRunnable();
-    public BigInteger unitTestThreshhold = new BigInteger("1000000000");
+    private static BigInteger concurrentThreads = BigInteger.TEN;
+    private BigInteger latestPotentialPrimeNumber = BigInteger.ZERO;
+    private PrimeRunnable primeRunnableEvaluation = new PrimeRunnable();
+    private BigInteger unitTestThreshhold = new BigInteger("1000000000");
 
-    final static Logger logger = Logger.getLogger(Prime.class);
+    final static private Logger logger = Logger.getLogger(Prime.class);
 
     public BigInteger findSmallestWithNZeroes(int numberOfZeroes) {
         BigInteger smallestNumber = Helper.smallestNumber(numberOfZeroes);
@@ -29,13 +30,14 @@ public class Prime {
         }
 
         primeRunnableEvaluation.setSmallestPrimeFound(BigInteger.ZERO);
-        primeRunnableEvaluation.threadsCompleted = BigInteger.ZERO;
+        PrimeRunnable.threadsCompleted = BigInteger.ZERO;
         primeRunnableEvaluation.potentialPrimeNumber = BigInteger.ZERO;
 
         while (true) {
 
-            if (primeRunnableEvaluation.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0) {
-                ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(primeRunnableEvaluation.potentialPrimeNumberTestCompleted);
+            if (PrimeRunnable.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0) {
+                ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(PrimeRunnable.potentialPrimeNumberTestCompleted);
+                //TODO the warning indicates that temporaryListToSort is always null, DOES THIS CAUSE AN ISSUE?
                 if (temporaryListToSort == null) {
                     continue;
                 }
@@ -45,24 +47,23 @@ public class Prime {
                 BigInteger counter = smallestNumber.add(BigInteger.ONE).add(threadCounter).subtract(concurrentThreads);
                 boolean smallestPrimeFoundValidated = false;
 
-                while (i.hasNext() && smallestPrimeFoundValidated == false) {
+                while (i.hasNext() && !smallestPrimeFoundValidated) {
                     BigInteger currentItem = i.next();
-                    if (counter.compareTo(currentItem) == 0) {
-                        if (counter.compareTo(primeRunnableEvaluation.smallestPrimeFound) == 0) {
-                            smallestPrimeFoundValidated = true;
-                        } else {
-                            counter = counter.add(BigInteger.ONE);
-                        }
-                        continue;
+                    if (counter.compareTo(currentItem) != 0) {
+                        break;
                     }
-                    break;
+                    if (counter.compareTo(PrimeRunnable.smallestPrimeFound) == 0) {
+                        smallestPrimeFoundValidated = true;
+                    } else {
+                        counter = counter.add(BigInteger.ONE);
+                    }
                 }
                 if (smallestPrimeFoundValidated) {
-                    logger.info("smallest number is: " + primeRunnableEvaluation.smallestPrimeFound);
-                    return primeRunnableEvaluation.smallestPrimeFound;
+                    logger.info("smallest number is: " + PrimeRunnable.smallestPrimeFound);
+                    return PrimeRunnable.smallestPrimeFound;
                 }
 
-            } else if (primeRunnableEvaluation.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
+            } else if (PrimeRunnable.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
                 logger.info("currentPotentialPrime " + latestPotentialPrimeNumber);
                 threadCounter = initiateThreads(threadCounter, smallestNumber);
             }
@@ -80,13 +81,13 @@ public class Prime {
         }
     }
 
-    public BigInteger initiateThreads(BigInteger threadCounter, BigInteger smallestNumber) {
-        primeRunnableEvaluation.potentialPrimeNumberTestCompleted.clear();
+    private BigInteger initiateThreads(BigInteger threadCounter, BigInteger smallestNumber) {
+        PrimeRunnable.potentialPrimeNumberTestCompleted.clear();
         boolean firstPass = true;
         for (BigInteger i = threadCounter; i.compareTo(concurrentThreads.add(threadCounter)) < 0; i = i.add(BigInteger.ONE)) {
             PrimeRunnable primeRunnable = new PrimeRunnable();
             if (firstPass) {
-                primeRunnable.threadsCompleted = BigInteger.ZERO;
+                PrimeRunnable.threadsCompleted = BigInteger.ZERO;
                 firstPass = false;
             }
             primeRunnable.potentialPrimeNumber = smallestNumber.add(i).add(BigInteger.ONE);
