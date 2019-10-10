@@ -17,7 +17,7 @@ public class Helper {
         return returnNumber;
     }
 
-    public static BigInteger BigIntegerAddition(BigInteger firstNumber, BigInteger secondNumber) {
+    public static BigInteger bigIntegerAddition(BigInteger firstNumber, BigInteger secondNumber) {
         return firstNumber.add(secondNumber);
     }
 }

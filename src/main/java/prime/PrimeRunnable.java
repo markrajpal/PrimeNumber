@@ -11,7 +11,7 @@ public class PrimeRunnable extends Thread {
     public static BigInteger smallestPrimeFound = BigInteger.ZERO;
     public static BigInteger threadsCompleted = BigInteger.ZERO;
     public BigInteger potentialPrimeNumber;
-    public static ArrayList<BigInteger> potentialPrimeNumberTestCompleted = new ArrayList<BigInteger>();
+    public static final ArrayList<BigInteger> potentialPrimeNumberTestCompleted = new ArrayList<BigInteger>();
 
     public void run() {
         if (isPrime(potentialPrimeNumber)) {
@@ -39,7 +39,7 @@ public class PrimeRunnable extends Thread {
         divisionResult = potentialPrimeNumber.mod(new BigInteger("5"));
         if (divisionResult.compareTo(BigInteger.ZERO) == 0) return false;
 
-        //check if the sume of n is a multiple of 3
+        //check if the sum of n is a multiple of 3
         if (sumOfDigits(potentialPrimeNumber)%3==0) return false;
 
         //if not, then just check the odds

@@ -196,12 +196,31 @@ https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
 09/12/2019
 Changes:
 -Added PMD
+-Added a TODO
 What works?
 -same
 What doesn't work?
 -same
 What's next?
 CI (Travis CI)
+Try 100 zeroes
+Support for an actual start position so we don't have to start over everytime
+Rename PrimeRunnable to PrimeThread
+Find a new primality test (possibly Miller-Rabin)
+Thread the for loop in isPrime
+Add Static Analysis:
+https://spotbugs.readthedocs.io/en/latest/maven.html
+https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
+
+09/13/2019
+Changes:
+-The build will now fail if PMD finds any errors
+What works?
+-same
+What doesn't work?
+-same
+What's next?
+CI (Travis CI), need to run mvn verify & site
 Try 100 zeroes
 Support for an actual start position so we don't have to start over everytime
 Rename PrimeRunnable to PrimeThread

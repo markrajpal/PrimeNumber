@@ -85,13 +85,13 @@ public class PrimeUnitTest extends TestCase {
     public void testBigIntegerAdditionA() {
         BigInteger firstNumber = new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
         BigInteger secondNumber = new BigInteger("1");
-        assertEquals(new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"), Helper.BigIntegerAddition(firstNumber, secondNumber));
+        assertEquals(new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"), Helper.bigIntegerAddition(firstNumber, secondNumber));
     }
 
     public void testBigIntegerAdditionB() {
         BigInteger firstNumber = new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000");
         BigInteger secondNumber = new BigInteger("1");
-        assertNotEquals(new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"), Helper.BigIntegerAddition(firstNumber, secondNumber));
+        assertNotEquals(new BigInteger("10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"), Helper.bigIntegerAddition(firstNumber, secondNumber));
     }
 
     public void testFindSmallestWithTenZeroes() {
