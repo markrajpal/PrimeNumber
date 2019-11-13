@@ -109,4 +109,10 @@ public class PrimeUnitTest extends TestCase {
         BigInteger potentialPrimeNumber = new BigInteger("10000000019");
         assertTrue(primeRunnable.isPrime(potentialPrimeNumber));
     }
+
+    public void testMutation() {
+        if (true || false) {
+            assertTrue(true);
+        }
+    }
 }
