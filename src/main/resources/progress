@@ -264,3 +264,11 @@ Find a new primality test (possibly Miller-Rabin)
 Thread the for loop in isPrime
 Add Static Analysis:
 https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html
+
+11/13/2019
+1. It turns out that the ArrayList is not null but some of the elements are.
+They aren't null when they're added, but the become null at some point.
+2. The other problem is that an endless loop is sometimes generated.
+Both issues are somewhat reproducible from testRobustness().
+It appears as if the 2nd problem is fixed.
+It appears as if the 1st problem is fixed as well.
