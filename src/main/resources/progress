@@ -256,7 +256,7 @@ What works?
 What doesn't work?
 -same
 What's next?
-CI (Travis CI), need to run mvn verify & site
+CI (Travis CI), need to run mvn verify & site & run long running tests as a separate build?
 Try 100 zeroes
 Support for an actual start position so we don't have to start over everytime
 Rename PrimeRunnable to PrimeThread
@@ -272,3 +272,14 @@ They aren't null when they're added, but the become null at some point.
 Both issues are somewhat reproducible from testRobustness().
 It appears as if the 2nd problem is fixed.
 It appears as if the 1st problem is fixed as well.
+
+12/22/2019
+Added Checkstyle. Just the reporting. I didn't fail the build because there are 87 errors.
+Resolved 2 PMD bugs
+Notes on LucasLehmer (this test only works if the number can be expressed as 2^^n -1):
+31? = 2^^5 – 1
+U2 = 4
+U3 = 4^^2 -2 = 14 mod 31 = 14
+U4 = 14^^2 -2 = 194 mod 31 = 8
+U5 = 8^^2 -2 = 62 mod 31 = 0
+It is Prime

@@ -24,7 +24,7 @@ public class PrimeLongTest extends TestCase {
 
     public void testRobustness() {
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             PrimeUnitTest pUnitTest = new PrimeUnitTest();
             pUnitTest.testFindSmallestWithThreeZeroes();
         }
@@ -32,7 +32,7 @@ public class PrimeLongTest extends TestCase {
 
     public void testRobustness2() {
 
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             PrimeUnitTest pUnitTest = new PrimeUnitTest();
             pUnitTest.testInitiateThreads();
         }

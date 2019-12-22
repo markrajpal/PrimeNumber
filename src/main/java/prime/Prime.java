@@ -17,7 +17,6 @@ public class Prime {
     private static BigInteger concurrentThreads = BigInteger.TEN;
     private BigInteger latestPotentialPrimeNumber = BigInteger.ZERO;
     private static PrimeRunnable primeRunnableEvaluation = new PrimeRunnable();
-    private BigInteger unitTestThreshhold = new BigInteger("1000000000000");
 
     final static private Logger logger = Logger.getLogger(Prime.class);
 
@@ -39,10 +38,15 @@ public class Prime {
                 ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(primeRunnableEvaluation.potentialPrimeNumberTestCompleted);
 
                 //TODO the warning indicates that temporaryListToSort is always null, DOES THIS CAUSE AN ISSUE?
-                if (temporaryListToSort == null) {
-                    continue;
+
+                //if (temporaryListToSort == null) {
+                //    continue;
+                //}
+
+                while (temporaryListToSort.remove(null)) {
+                    logger.debug("temporaryListToSort has a null element");
                 }
-                while (temporaryListToSort.remove(null));
+
                 logger.info("size:" + temporaryListToSort.size());
                 Collections.sort(temporaryListToSort);
 
