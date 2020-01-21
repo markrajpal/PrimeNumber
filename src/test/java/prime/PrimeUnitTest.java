@@ -27,6 +27,12 @@ public class PrimeUnitTest extends TestCase {
         assertTrue(primeRunnable.isPrime(potentialPrimeNumber));
     }
 
+    public void testIsSixtyOnePrime() {
+
+        BigInteger potentialPrimeNumber = new BigInteger("61");
+        assertTrue(primeRunnable.isPrime(potentialPrimeNumber));
+    }
+
     public void testSmallestWithTwoZeroes() {
         int numberOfZeroes = 2;
         assertEquals(new BigInteger("100"), Helper.smallestNumber(numberOfZeroes));
