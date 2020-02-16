@@ -3,9 +3,15 @@ package prime;
 // Java program to check for primality using
 // Lucas-Lehmer series.
 
+import java.util.HashMap;
+import java.util.Iterator;
+
 public class LucasLehmer {
 // Function to check whether (2^p - 1)
 // is prime or not.
+
+    static HashMap<Integer, Integer> LucasLehmerCandidates = new HashMap<Integer, Integer>();
+
     static boolean isPrime(int p) {
 
 // generate the number
@@ -24,4 +30,18 @@ public class LucasLehmer {
         return (nextval == 0);
     }
 
+    static boolean isExpressedAsMultiplierOfTwoMinusOne(int p) { //e.g. 2^^n - 1
+        // Getting an iterator
+        Iterator hmIterator = LucasLehmerCandidates.entrySet().iterator();
+
+        boolean foundLucasLehmerCandidate = false;
+        while (hmIterator.hasNext()) {
+            HashMap.Entry mapElement = (HashMap.Entry)hmIterator.next();
+            if (mapElement.getValue() == (Integer)p) {
+                return true;
+            }
+        }
+
+        return foundLucasLehmerCandidate;
+    }
 }

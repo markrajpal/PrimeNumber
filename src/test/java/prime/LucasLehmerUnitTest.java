@@ -15,8 +15,13 @@ public class LucasLehmerUnitTest extends TestCase {
     }
 
     public void testIsSixtyOnePrime() {
-        //61 is actually Prime but the Lucas Lehmer test cannot determine that
+        //61 is actually Prime but the Lucas Lehmer test cannot determine that because 61 cannot be expressed as 2^^n - 1
         int potentialPrimeNumber = 61;
         assertFalse(LucasLehmer.isPrime(potentialPrimeNumber));
+    }
+
+    public void testLLCandidate() {
+        int potentialPrimeNumber = 1;
+        assertFalse(LucasLehmer.isExpressedAsMultiplierOfTwoMinusOne(potentialPrimeNumber));
     }
 }

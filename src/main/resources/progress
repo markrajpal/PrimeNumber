@@ -288,3 +288,8 @@ It is Prime
 Added a test for LucasLehmer.
 However, I need a check to determine if the number can be expressed as 2^^n -1.
 Then I can integrate this into the rest of the code.
+
+02/15/2020
+Stubbed in the isExpressedAsMultiplierOfTwoMinusOne function.
+It needs to dynamically populate the HashMap.
+Then it can be integrated into the rest of the code.

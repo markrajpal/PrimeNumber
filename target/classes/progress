@@ -283,3 +283,8 @@ U3 = 4^^2 -2 = 14 mod 31 = 14
 U4 = 14^^2 -2 = 194 mod 31 = 8
 U5 = 8^^2 -2 = 62 mod 31 = 0
 It is Prime
+
+01/20/2020
+Added a test for LucasLehmer.
+However, I need a check to determine if the number can be expressed as 2^^n -1.
+Then I can integrate this into the rest of the code.
