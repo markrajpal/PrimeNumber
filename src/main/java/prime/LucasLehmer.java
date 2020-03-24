@@ -10,7 +10,7 @@ public class LucasLehmer {
 // Function to check whether (2^p - 1)
 // is prime or not.
 
-    static HashMap<Integer, Integer> LucasLehmerCandidates = new HashMap<Integer, Integer>();
+    static HashMap<Integer, Integer> LucasLehmerCandidates = new HashMap<>();
 
     static boolean isPrime(int p) {
 
@@ -27,17 +27,17 @@ public class LucasLehmer {
 
 // now if the (p-1)th term is
 // 0 return true else false.
-        return (nextval == 0);
+        return nextval == 0;
     }
 
-    static boolean isExpressedAsMultiplierOfTwoMinusOne(int p) { //e.g. 2^^n - 1
+    static boolean isExpressedAsMultiplierOfTwoMinusOne(Integer p) { //e.g. 2^^n - 1
         // Getting an iterator
         Iterator hmIterator = LucasLehmerCandidates.entrySet().iterator();
 
         boolean foundLucasLehmerCandidate = false;
         while (hmIterator.hasNext()) {
             HashMap.Entry mapElement = (HashMap.Entry)hmIterator.next();
-            if (mapElement.getValue() == (Integer)p) {
+            if ((int)mapElement.getValue() == p) {
                 return true;
             }
         }

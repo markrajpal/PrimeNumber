@@ -21,7 +21,7 @@ public class LucasLehmerUnitTest extends TestCase {
     }
 
     public void testLLCandidate() {
-        int potentialPrimeNumber = 1;
+        Integer potentialPrimeNumber = 1;
         assertFalse(LucasLehmer.isExpressedAsMultiplierOfTwoMinusOne(potentialPrimeNumber));
     }
 }
