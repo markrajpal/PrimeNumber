@@ -4,3 +4,5 @@ os: macos
 
 jdk:
 - openjdk8
+
+dist: trusty
