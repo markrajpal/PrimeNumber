@@ -2,7 +2,5 @@ dist: trusty
 
 language: java
 
-os: macos
-
 jdk:
 - openjdk8
