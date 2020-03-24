@@ -1,3 +1,6 @@
 language: java
 
 os: macos
+
+jdk:
+- openjdk8
