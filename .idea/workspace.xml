@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/progress" afterPath="$PROJECT_DIR$/src/main/resources/progress" />
     </list>
     <ignored path="PrimeNumber.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,17 +105,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="progress" pinned="false" current-in-tab="false">
+      <file leaf-file-name="progress" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/progress">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1112">
-              <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+            <state relative-caret-position="768">
+              <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -175,11 +175,11 @@
         <option value="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/prime/Prime.java" />
         <option value="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/progress" />
         <option value="$PROJECT_DIR$/src/test/java/prime/LucasLehmerUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/prime/LucasLehmer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/src/main/resources/progress" />
       </list>
     </option>
   </component>
@@ -970,7 +970,7 @@
       <workItem from="1579142977540" duration="2215000" />
       <workItem from="1580456814577" duration="120000" />
       <workItem from="1581750972116" duration="3462000" />
-      <workItem from="1584631630126" duration="4750000" />
+      <workItem from="1584631630126" duration="4912000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -1098,7 +1098,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585065943576</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="TravisCI setup">
+      <created>1585066408360</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1585066408360</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1134,7 +1141,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41615000" />
+    <option name="totallyTimeSpent" value="41777000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -1568,14 +1575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/progress">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1112">
-          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/pmd.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1638,6 +1637,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/progress">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="299" column="0" selection-start-line="299" selection-start-column="0" selection-end-line="299" selection-end-column="0" />
           <folding />
         </state>
       </provider>
