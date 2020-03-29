@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="removing log files from Git">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/prime/LucasLehmer.java.html" beforeDir="false" />
@@ -486,7 +486,7 @@
       <workItem from="1585460513946" duration="1326000" />
       <workItem from="1585462304574" duration="214000" />
       <workItem from="1585462732782" duration="296000" />
-      <workItem from="1585463063543" duration="1037000" />
+      <workItem from="1585463063543" duration="1282000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -635,7 +635,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585379842545</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="removing log files from Git">
+      <created>1585464149123</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1585464149124</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView">
@@ -702,26 +709,26 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463021179" />
-    <state x="856" y="302" key="CommitChangelistDialog2" timestamp="1585463344709">
+    <state x="856" y="302" key="CommitChangelistDialog2" timestamp="1585464369496">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="856" y="302" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463344709" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1585463864389">
+    <state x="856" y="302" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464369496" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1585464388645">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463864389" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1585463864388">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1585464388645">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463864388" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1585463864388">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1585464388644">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463864388" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1585463864388">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388644" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1585464388645">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463864388" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1585463286989">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -742,6 +749,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="750" y="280" key="SettingsEditor/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585462973011" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1585464151678">
+      <screen x="0" y="23" width="2560" height="1349" />
+    </state>
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464151678" />
     <state x="1045" y="621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585463368007">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
