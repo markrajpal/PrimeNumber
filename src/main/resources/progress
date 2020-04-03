@@ -296,4 +296,9 @@ Then it can be integrated into the rest of the code.
 
 3/24/2020
 I got Travis CI working.
-I would like to incorporate the long running tests as a cron job.
+I would like to incorporate a cron job.
+
+4/3/2020
+I incorporated a nightly cron job.
+I upgraded to JUnit5.
+I still need to get the unit tests running multiple times on the build server (i.e. Travis CI).

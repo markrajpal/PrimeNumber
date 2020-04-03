@@ -1,54 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="removing log files from Git">
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="clean up the target directory">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/prime/LucasLehmer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/prime/Prime.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/prime/PrimeRunnable.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/prime/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/utilities/Helper.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003241123/utilities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/prime/LucasLehmer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/prime/Prime.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/prime/PrimeRunnable.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/prime/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/utilities/Helper.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280118/utilities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/prime/LucasLehmer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/prime/Prime.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/prime/PrimeRunnable.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/prime/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/utilities/Helper.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280119/utilities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/prime/LucasLehmer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/prime/Prime.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/prime/PrimeRunnable.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/prime/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/utilities/Helper.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280121/utilities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/prime/LucasLehmer.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/prime/Prime.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/prime/PrimeRunnable.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/prime/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/utilities/Helper.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pit-reports/202003280122/utilities/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/pmd.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/pmd.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/spotbugsXml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/spotbugsXml.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-prime.LucasLehmerUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-prime.LucasLehmerUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-prime.PrimeUnitTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-prime.PrimeUnitTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/prime.PrimeUnitTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/prime.PrimeUnitTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prime.iml" beforeDir="false" afterPath="$PROJECT_DIR$/prime.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/prime/LucasLehmerUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/LucasLehmerUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,6 +70,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../PrimeNumber/PrimeNumber.iml" />
@@ -120,7 +89,7 @@
       <recent name="prime" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LucasLehmerUnitTest">
+  <component name="RunManager" selected="JUnit.PrimeUnitTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -437,15 +406,15 @@
     <list>
       <item itemvalue="JUnit.PrimeUnitTest" />
       <item itemvalue="JUnit.PrimeUnitTest.testIsFiftyPrime" />
-      <item itemvalue="Maven.prime [install]" />
       <item itemvalue="JUnit.PrimeUnitTest.testSmallestWithTwoZeroes" />
       <item itemvalue="JUnit.LucasLehmerUnitTest" />
+      <item itemvalue="Maven.prime [install]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimeUnitTest" />
         <item itemvalue="JUnit.LucasLehmerUnitTest" />
         <item itemvalue="JUnit.PrimeUnitTest.testSmallestWithTwoZeroes" />
-        <item itemvalue="JUnit.PrimeUnitTest" />
         <item itemvalue="JUnit.PrimeUnitTest.testIsFiftyPrime" />
         <item itemvalue="Maven.prime [install]" />
       </list>
@@ -486,7 +455,9 @@
       <workItem from="1585460513946" duration="1326000" />
       <workItem from="1585462304574" duration="214000" />
       <workItem from="1585462732782" duration="296000" />
-      <workItem from="1585463063543" duration="1282000" />
+      <workItem from="1585463063543" duration="2109000" />
+      <workItem from="1585489765867" duration="104000" />
+      <workItem from="1585490171736" duration="1221000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -642,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585464149124</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="clean up the target directory">
+      <created>1585464428586</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1585464428586</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -689,7 +667,8 @@
     <MESSAGE value="added isExpressedAsMultiplierOfTwoMinusOne" />
     <MESSAGE value="TravisCI setup" />
     <MESSAGE value="removing log files from Git" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing log files from Git" />
+    <MESSAGE value="clean up the target directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up the target directory" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -709,50 +688,50 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463021179" />
-    <state x="856" y="302" key="CommitChangelistDialog2" timestamp="1585464369496">
+    <state x="856" y="302" key="CommitChangelistDialog2" timestamp="1585899880146">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="856" y="302" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464369496" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1585464388645">
+    <state x="856" y="302" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585899880146" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1585899880181">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1585464388645">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585899880181" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1585899880181">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1585464388644">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585899880181" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1585899880180">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388644" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1585464388645">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585899880180" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1585899880181">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464388645" />
-    <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1585463286989">
+    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585899880181" />
+    <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1585464934208">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463286989" />
-    <state width="1227" height="376" key="GridCell.Tab.1.center" timestamp="1585463286988">
+    <state width="1227" height="376" key="GridCell.Tab.1.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464934208" />
+    <state width="1227" height="376" key="GridCell.Tab.1.center" timestamp="1585464934207">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463286987" />
-    <state width="1227" height="376" key="GridCell.Tab.1.left" timestamp="1585463286987">
+    <state width="1227" height="376" key="GridCell.Tab.1.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464934207" />
+    <state width="1227" height="376" key="GridCell.Tab.1.left" timestamp="1585464934207">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463286987" />
-    <state width="1227" height="376" key="GridCell.Tab.1.right" timestamp="1585463286988">
+    <state width="1227" height="376" key="GridCell.Tab.1.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464934207" />
+    <state width="1227" height="376" key="GridCell.Tab.1.right" timestamp="1585464934208">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463286988" />
+    <state width="1227" height="376" key="GridCell.Tab.1.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464934208" />
     <state x="750" y="280" key="SettingsEditor" timestamp="1585462973011">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="750" y="280" key="SettingsEditor/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585462973011" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1585464151678">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1585464430293">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464151678" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585464430293" />
     <state x="1045" y="621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585463368007">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -761,6 +740,14 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PrimeNumber$PrimeUnitTest.ic" NAME="PrimeUnitTest Coverage Results" MODIFIED="1585464934187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>prime.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/PrimeNumber$LucasLehmerUnitTest.ic" NAME="LucasLehmerUnitTest Coverage Results" MODIFIED="1585464904202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>prime.*</FILTER>
+    </SUITE>
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="" />
