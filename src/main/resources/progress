@@ -302,3 +302,5 @@ I would like to incorporate a cron job.
 I incorporated a nightly cron job.
 I upgraded to JUnit5.
 I still need to get the unit tests running multiple times on the build server (i.e. Travis CI).
+-Write a shell script that updates all @RepeatedTest(1) to 100 or 1000
+-Travis CI needs to call this before_install which can be set in the .yml file
