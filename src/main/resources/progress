@@ -304,3 +304,6 @@ I upgraded to JUnit5.
 I still need to get the unit tests running multiple times on the build server (i.e. Travis CI).
 -Write a shell script that updates all @RepeatedTest(1) to 100 or 1000
 -Travis CI needs to call this before_install which can be set in the .yml file
+
+4/23/2020
+I think I fixed the issue that was exposed by the mutation test where the unit test would fail.

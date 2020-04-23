@@ -12,6 +12,7 @@ public class PrimeRunnable extends Thread {
 
     public static BigInteger smallestPrimeFound = BigInteger.ZERO;
     public static BigInteger threadsCompleted = BigInteger.ZERO;
+    public static int threadInt = 0;
     public BigInteger potentialPrimeNumber;
     public static final ArrayList<BigInteger> potentialPrimeNumberTestCompleted = new ArrayList<BigInteger>();
 
@@ -21,9 +22,13 @@ public class PrimeRunnable extends Thread {
         if (isPrime(potentialPrimeNumber)) {
             setSmallestPrimeFound(potentialPrimeNumber);
         }
-        threadsCompleted = threadsCompleted.add(BigInteger.ONE);
+
+        threadInt = threadInt + 1;
         potentialPrimeNumberTestCompleted.add(potentialPrimeNumber);
         logger.info("num added:" + potentialPrimeNumber);
+        if (threadInt == 10) {
+            threadsCompleted = BigInteger.TEN;
+        }
     }
 
     public void setSmallestPrimeFound(BigInteger potentialPrimeNumberToSet) {

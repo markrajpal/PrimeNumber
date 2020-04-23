@@ -97,11 +97,13 @@ public class Prime {
         for (BigInteger i = threadCounter; i.compareTo(concurrentThreads.add(threadCounter)) < 0; i = i.add(BigInteger.ONE)) {
             PrimeRunnable primeRunnable = new PrimeRunnable();
             if (firstPass) {
-                primeRunnableEvaluation.threadsCompleted = BigInteger.ZERO;
+                primeRunnableEvaluation.threadInt = 0;
                 firstPass = false;
             }
+
             primeRunnable.potentialPrimeNumber = smallestNumber.add(i).add(BigInteger.ONE);
             primeRunnable.start();
+
             if (i.add(BigInteger.ONE).compareTo(concurrentThreads.add(threadCounter)) == 0) {
                 latestPotentialPrimeNumber = smallestNumber.add(i).add(BigInteger.ONE);
             }
