@@ -98,6 +98,7 @@ public class Prime {
             PrimeRunnable primeRunnable = new PrimeRunnable();
             if (firstPass) {
                 primeRunnableEvaluation.threadInt = 0;
+                primeRunnableEvaluation.threadsCompleted = BigInteger.ZERO;
                 firstPass = false;
             }
 

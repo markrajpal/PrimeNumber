@@ -308,3 +308,7 @@ I still need to get the unit tests running multiple times on the build server (i
 4/23/2020
 I think I fixed the issue that was exposed by the mutation test where the unit test would fail.
 testRobustness() fails. It probably needs to pause and ensure the prime number is found before continuing to the next iteration
+
+06/24/2020
+Fixed the issue with testRobustness().
+Not sure if this will resolve the issue with the mutation test.

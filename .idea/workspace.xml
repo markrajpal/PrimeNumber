@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="fixed a bug that would cause a unit test to hang">
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="identified a bug in testRobustness()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prime/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prime/Prime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <recent name="prime" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimeLongTest.testRobustness2">
+  <component name="RunManager" selected="JUnit.PrimeLongTest.testRobustness">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -381,10 +381,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
         <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithTenZeroes" />
         <item itemvalue="JUnit.PrimeUnitTest" />
+        <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
         <item itemvalue="JUnit.LucasLehmerUnitTest" />
       </list>
     </recent_temporary>
@@ -428,7 +428,19 @@
       <workItem from="1585489765867" duration="104000" />
       <workItem from="1585490171736" duration="2700000" />
       <workItem from="1586455079561" duration="231000" />
-      <workItem from="1586467761402" duration="6467000" />
+      <workItem from="1586467761402" duration="6645000" />
+      <workItem from="1587710265920" duration="791000" />
+      <workItem from="1588221194396" duration="442000" />
+      <workItem from="1588831599098" duration="679000" />
+      <workItem from="1590366502281" duration="455000" />
+      <workItem from="1590788663984" duration="184000" />
+      <workItem from="1590900014369" duration="560000" />
+      <workItem from="1591320187139" duration="461000" />
+      <workItem from="1591384140327" duration="31000" />
+      <workItem from="1591384250685" duration="441000" />
+      <workItem from="1592787634639" duration="87000" />
+      <workItem from="1592794364669" duration="448000" />
+      <workItem from="1593053611577" duration="4047000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -612,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587629239051</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="identified a bug in testRobustness()">
+      <created>1587666339468</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1587666339469</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView">
@@ -661,7 +680,8 @@
     <MESSAGE value="clean up the target directory" />
     <MESSAGE value="added JUnit5" />
     <MESSAGE value="fixed a bug that would cause a unit test to hang" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug that would cause a unit test to hang" />
+    <MESSAGE value="identified a bug in testRobustness()" />
+    <option name="LAST_COMMIT_MESSAGE" value="identified a bug in testRobustness()" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -681,30 +701,35 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="104" y="123" width="2316" height="1148" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587660908884" />
-    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1585463021179">
+    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1591384022095">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585463021179" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1587629238794">
+    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1591384022095" />
+    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1588831466681" />
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1587666339311">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587629238794" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1587665594256">
+    <state x="1461" y="178" key="CommitChangelistDialog2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587666339311" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1593058840976">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587665594256" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1587665594255">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1593058840976" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587912178660" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1593058840976">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587665594255" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1587665594255">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1593058840976" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587912178659" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1593058840975">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587665594255" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1587665594256">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1593058840975" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587912178658" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1593058840976">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587665594256" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1593058840976" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587912178659" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1587626981140">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -725,10 +750,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="750" y="280" key="SettingsEditor/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1585462973011" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1587629244171">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1587666341122">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587629244171" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/2560.23.1920.1177/-1920.23.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1587666341122" />
     <state x="1045" y="621" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585463368007">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
