@@ -1,6 +1,4 @@
-os: osx
-
-dist: trusty
+dist: bionic
 
 language: java
 
