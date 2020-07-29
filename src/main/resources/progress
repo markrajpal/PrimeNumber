@@ -315,3 +315,7 @@ Not sure if this will resolve the issue with the mutation test.
 
 07/28/2020
 It appears as though the failing mutation test and other weird failures have been alleviated by switching to Ubuntu Bionic on the build server.
+
+07/29/2020
+There seems to be an issue with testFindSmallestWithNineZeroes(). This is reproducible by running TestRobustness().
+Once this is solved, I'll have a better idea if the mutation test issue is truly solved.

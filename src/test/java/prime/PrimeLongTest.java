@@ -34,7 +34,7 @@ public class PrimeLongTest  {
 
         for (int i = 0; i < 10000; i++) {
             PrimeUnitTest pUnitTest = new PrimeUnitTest();
-            pUnitTest.testFindSmallestWithTenZeroes();
+            pUnitTest.testFindSmallestWithNineZeroes();
             logger.info("iteration completed:  " + i);
         }
     }
