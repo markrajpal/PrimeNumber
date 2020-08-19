@@ -322,3 +322,4 @@ Once this is solved, I'll have a better idea if the mutation test issue is truly
 
 08/19/2020
 It was determined that there isn't a problem with testFindSmallestWithNineZeroes(). A delay was added to test it more thoroughly.
+Forced testFindSmallestWithNineZeroes() to run first.

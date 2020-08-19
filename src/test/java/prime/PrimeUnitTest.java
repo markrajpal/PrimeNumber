@@ -1,5 +1,6 @@
 package prime;
 
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.RepeatedTest;
 import utilities.Helper;
 
@@ -77,6 +78,7 @@ public class PrimeUnitTest {
     }
 
     @RepeatedTest(1)
+    @Order(1)
     public void testFindSmallestWithNineZeroes() {
 
         int numberOfZeroes = 9;

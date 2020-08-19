@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="updated the status">
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="addressed the the issue with testFindSmallestWithNineZeroes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -451,7 +452,7 @@
       <workItem from="1595994399258" duration="199000" />
       <workItem from="1596000763617" duration="85000" />
       <workItem from="1596028458521" duration="384000" />
-      <workItem from="1597737260827" duration="6303000" />
+      <workItem from="1597737260827" duration="6842000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -677,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596030124492</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="addressed the the issue with testFindSmallestWithNineZeroes">
+      <created>1597827245808</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1597827245808</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -731,7 +739,8 @@
     <MESSAGE value="trying to force ubuntu bionic on the build" />
     <MESSAGE value="updated the progress file" />
     <MESSAGE value="updated the status" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the status" />
+    <MESSAGE value="addressed the the issue with testFindSmallestWithNineZeroes" />
+    <option name="LAST_COMMIT_MESSAGE" value="addressed the the issue with testFindSmallestWithNineZeroes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -739,26 +748,26 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1595993485521" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1596030123683">
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1597827245439">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1596030123683" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1597789777278">
+    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597827245439" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1597846214408">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789777278" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1597789777277">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1597846214408">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789777277" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1597789777277">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1597846214407">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789777277" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1597789777277">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214407" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1597846214408">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789777277" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1597789645836">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -779,10 +788,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="1028" y="406" key="RollbackChangesDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597826960606" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1596030129865">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1597827249323">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1596030129865" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597827249323" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
