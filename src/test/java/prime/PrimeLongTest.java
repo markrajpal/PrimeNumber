@@ -29,22 +29,22 @@ public class PrimeLongTest  {
         assertTrue(primeRunnable.isPrime(potentialPrimeNumber));
     }
 
-    @RepeatedTest(1)
+    @RepeatedTest(10)
     public void testRobustness() {
 
-        for (int i = 0; i < 10000; i++) {
-            PrimeUnitTest pUnitTest = new PrimeUnitTest();
-            pUnitTest.testFindSmallestWithNineZeroes();
-            logger.info("iteration completed:  " + i);
+        PrimeUnitTest pUnitTest = new PrimeUnitTest();
+        pUnitTest.testFindSmallestWithNineZeroes();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 
-    @RepeatedTest(1)
+    @RepeatedTest(10000)
     public void testRobustness2() {
-
-        for (int i = 0; i < 10000; i++) {
-            PrimeUnitTest pUnitTest = new PrimeUnitTest();
-            pUnitTest.testInitiateThreads();
-        }
+        
+        PrimeUnitTest pUnitTest = new PrimeUnitTest();
+        pUnitTest.testInitiateThreads();
     }
 }
