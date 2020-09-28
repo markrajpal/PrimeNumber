@@ -29,13 +29,13 @@ public class Prime {
         }
 
         primeRunnableEvaluation.setSmallestPrimeFound(BigInteger.ZERO);
-        primeRunnableEvaluation.threadsCompleted = BigInteger.ZERO;
+        PrimeRunnable.threadsCompleted = BigInteger.ZERO;
         primeRunnableEvaluation.potentialPrimeNumber = BigInteger.ZERO;
 
         while (true) {
 
-            if (primeRunnableEvaluation.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0) {
-                ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(primeRunnableEvaluation.potentialPrimeNumberTestCompleted);
+            if (PrimeRunnable.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0 && PrimeRunnable.threadsCompleted.compareTo(BigInteger.TEN) == 0) {
+                ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(PrimeRunnable.potentialPrimeNumberTestCompleted);
 
                 //TODO the warning indicates that temporaryListToSort is always null, DOES THIS CAUSE AN ISSUE?
 
@@ -61,18 +61,18 @@ public class Prime {
                         counter = currentItem;
                         //break;
                     }
-                    if (counter.compareTo(primeRunnableEvaluation.smallestPrimeFound) == 0) {
+                    if (counter.compareTo(PrimeRunnable.smallestPrimeFound) == 0) {
                         smallestPrimeFoundValidated = true;
                     } else {
                         counter = counter.add(BigInteger.ONE);
                     }
                 }
                 if (smallestPrimeFoundValidated) {
-                    logger.info("smallest number is: " + primeRunnableEvaluation.smallestPrimeFound);
+                    logger.info("smallest number is: " + PrimeRunnable.smallestPrimeFound);
                 }
-                return primeRunnableEvaluation.smallestPrimeFound;
+                return PrimeRunnable.smallestPrimeFound;
 
-            } else if (primeRunnableEvaluation.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
+            } else if (PrimeRunnable.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
                 logger.info("currentPotentialPrime " + latestPotentialPrimeNumber);
                 threadCounter = initiateThreads(threadCounter, smallestNumber);
             }
@@ -92,13 +92,13 @@ public class Prime {
     }
 
     public BigInteger initiateThreads(BigInteger threadCounter, BigInteger smallestNumber) {
-        primeRunnableEvaluation.potentialPrimeNumberTestCompleted.clear();
+        PrimeRunnable.potentialPrimeNumberTestCompleted.clear();
         boolean firstPass = true;
         for (BigInteger i = threadCounter; i.compareTo(concurrentThreads.add(threadCounter)) < 0; i = i.add(BigInteger.ONE)) {
             PrimeRunnable primeRunnable = new PrimeRunnable();
             if (firstPass) {
-                primeRunnableEvaluation.threadInt = 0;
-                primeRunnableEvaluation.threadsCompleted = BigInteger.ZERO;
+                PrimeRunnable.threadInt = 0;
+                PrimeRunnable.threadsCompleted = BigInteger.ZERO;
                 firstPass = false;
             }
 

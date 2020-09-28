@@ -323,3 +323,12 @@ Once this is solved, I'll have a better idea if the mutation test issue is truly
 08/19/2020
 It was determined that there isn't a problem with testFindSmallestWithNineZeroes(). A delay was added to test it more thoroughly.
 Forced testFindSmallestWithNineZeroes() to run first.
+
+09/27/2020
+There are still 2 issues.
+testFindSmallestWithNineZeroes() sometimes fails due to the failed assertion
+testFindSmallestWithTenZeroes() sometimes fails due to the mutation test
+To address testFindSmallestWithNineZeroes():
+-a clause was added to an if statement
+-the forced ordering of the unit tests was removed
+-the delay in the robustness test was removed, but there are a few occasions where the test hangs

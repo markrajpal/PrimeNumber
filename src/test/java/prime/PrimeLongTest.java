@@ -29,16 +29,18 @@ public class PrimeLongTest  {
         assertTrue(primeRunnable.isPrime(potentialPrimeNumber));
     }
 
-    @RepeatedTest(10)
+    @RepeatedTest(100)
     public void testRobustness() {
 
         PrimeUnitTest pUnitTest = new PrimeUnitTest();
         pUnitTest.testFindSmallestWithNineZeroes();
+        /*
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+        */
     }
 
     @RepeatedTest(10000)

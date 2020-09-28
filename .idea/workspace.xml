@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="addressed the the issue with testFindSmallestWithNineZeroes">
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="addressed the recurring issues with testFindSmallestWithNineZeroes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prime/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prime/Prime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,6 +226,22 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
+    <configuration name="LucasLehmerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prime" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="prime" />
+      <option name="MAIN_CLASS_NAME" value="prime.LucasLehmerUnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrimeLongTest.testRobustness" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prime" />
       <extension name="coverage">
@@ -258,7 +276,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeUnitTest.lowerNumberNotYetTested" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrimeUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prime" />
       <extension name="coverage">
         <pattern>
@@ -268,14 +286,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="prime" />
       <option name="MAIN_CLASS_NAME" value="prime.PrimeUnitTest" />
-      <option name="METHOD_NAME" value="lowerNumberNotYetTested" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeUnitTest.testFindSmallestWithTenZeroes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PrimeUnitTest.testFindSmallestWithNineZeroes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prime" />
       <extension name="coverage">
         <pattern>
@@ -285,24 +302,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="prime" />
       <option name="MAIN_CLASS_NAME" value="prime.PrimeUnitTest" />
-      <option name="METHOD_NAME" value="testFindSmallestWithTenZeroes" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PrimeUnitTest.testRandomInt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prime" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="prime.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="prime" />
-      <option name="MAIN_CLASS_NAME" value="prime.PrimeUnitTest" />
-      <option name="METHOD_NAME" value="testRandomInt" />
+      <option name="METHOD_NAME" value="testFindSmallestWithNineZeroes" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -378,19 +378,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithTenZeroes" />
       <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
-      <item itemvalue="JUnit.PrimeUnitTest.lowerNumberNotYetTested" />
-      <item itemvalue="JUnit.PrimeUnitTest.testRandomInt" />
       <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
+      <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithNineZeroes" />
+      <item itemvalue="JUnit.PrimeUnitTest" />
+      <item itemvalue="JUnit.LucasLehmerUnitTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
-        <item itemvalue="JUnit.PrimeUnitTest.testRandomInt" />
-        <item itemvalue="JUnit.PrimeUnitTest.lowerNumberNotYetTested" />
-        <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithTenZeroes" />
+        <item itemvalue="JUnit.PrimeUnitTest" />
+        <item itemvalue="JUnit.LucasLehmerUnitTest" />
+        <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithNineZeroes" />
       </list>
     </recent_temporary>
   </component>
@@ -452,7 +452,8 @@
       <workItem from="1595994399258" duration="199000" />
       <workItem from="1596000763617" duration="85000" />
       <workItem from="1596028458521" duration="384000" />
-      <workItem from="1597737260827" duration="6842000" />
+      <workItem from="1597737260827" duration="6877000" />
+      <workItem from="1601176753570" duration="1843000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -685,7 +686,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597827245808</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="forced testFindSmallestWithNineZeroes to run first">
+      <created>1597846307147</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1597846307147</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -740,7 +748,9 @@
     <MESSAGE value="updated the progress file" />
     <MESSAGE value="updated the status" />
     <MESSAGE value="addressed the the issue with testFindSmallestWithNineZeroes" />
-    <option name="LAST_COMMIT_MESSAGE" value="addressed the the issue with testFindSmallestWithNineZeroes" />
+    <MESSAGE value="forced testFindSmallestWithNineZeroes to run first" />
+    <MESSAGE value="addressed the recurring issues with testFindSmallestWithNineZeroes" />
+    <option name="LAST_COMMIT_MESSAGE" value="addressed the recurring issues with testFindSmallestWithNineZeroes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -748,50 +758,50 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1595993485521" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1597827245439">
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1601263458027">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597827245439" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1597846214408">
+    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263458027" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1601263594752">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1597846214408">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594752" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1601263594751">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1597846214407">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594751" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1601263594751">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214407" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1597846214408">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594751" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1601263594752">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846214408" />
-    <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1597789645836">
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594752" />
+    <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1597846324653">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789645836" />
-    <state width="1227" height="376" key="GridCell.Tab.1.center" timestamp="1597789645836">
+    <state width="1227" height="376" key="GridCell.Tab.1.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846324653" />
+    <state width="1227" height="376" key="GridCell.Tab.1.center" timestamp="1597846324652">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789645836" />
-    <state width="1227" height="376" key="GridCell.Tab.1.left" timestamp="1597789645836">
+    <state width="1227" height="376" key="GridCell.Tab.1.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846324652" />
+    <state width="1227" height="376" key="GridCell.Tab.1.left" timestamp="1597846324652">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789645836" />
-    <state width="1227" height="376" key="GridCell.Tab.1.right" timestamp="1597789645836">
+    <state width="1227" height="376" key="GridCell.Tab.1.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846324652" />
+    <state width="1227" height="376" key="GridCell.Tab.1.right" timestamp="1597846324652">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1227" height="376" key="GridCell.Tab.1.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597789645836" />
+    <state width="1227" height="376" key="GridCell.Tab.1.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846324652" />
     <state x="1028" y="406" key="RollbackChangesDialog" timestamp="1597826960606">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="1028" y="406" key="RollbackChangesDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597826960606" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1597827249323">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1597846309263">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597827249323" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846309263" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
