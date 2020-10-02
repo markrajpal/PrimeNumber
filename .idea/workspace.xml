@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/prime/Prime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prime/Prime.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <recent name="prime" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimeLongTest.testRobustness2">
+  <component name="RunManager" selected="JUnit.PrimeUnitTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -386,9 +384,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimeUnitTest" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
-        <item itemvalue="JUnit.PrimeUnitTest" />
         <item itemvalue="JUnit.LucasLehmerUnitTest" />
         <item itemvalue="JUnit.PrimeUnitTest.testFindSmallestWithNineZeroes" />
       </list>
@@ -453,7 +451,9 @@
       <workItem from="1596000763617" duration="85000" />
       <workItem from="1596028458521" duration="384000" />
       <workItem from="1597737260827" duration="6877000" />
-      <workItem from="1601176753570" duration="1843000" />
+      <workItem from="1601176753570" duration="1998000" />
+      <workItem from="1601606959492" duration="142000" />
+      <workItem from="1601607271793" duration="271000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -693,7 +693,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597846307147</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="addressed the recurring issues with testFindSmallestWithNineZeroes">
+      <created>1601263639142</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1601263639142</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -754,30 +761,30 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1595993485521">
+    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1601607026585">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1595993485521" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1601263458027">
+    <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601607026585" />
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1601263638950">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263458027" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1601263594752">
+    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263638950" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1601307165222">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594752" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1601263594751">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601307165222" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1601307165221">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594751" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1601263594751">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601307165221" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1601307165220">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594751" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1601263594752">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601307165220" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1601307165221">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263594752" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601307165221" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1597846324653">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -798,10 +805,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="1028" y="406" key="RollbackChangesDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597826960606" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1597846309263">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1601263644154">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1597846309263" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601263644154" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

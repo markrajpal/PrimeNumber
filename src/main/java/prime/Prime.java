@@ -33,7 +33,8 @@ public class Prime {
         primeRunnableEvaluation.potentialPrimeNumber = BigInteger.ZERO;
 
         while (true) {
-
+            //TODO the 2nd part of this if statement is inefficient
+            //Waiting for a set a 10 to complete could take a long time, especially when we get into larger numbers
             if (PrimeRunnable.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0 && PrimeRunnable.threadsCompleted.compareTo(BigInteger.TEN) == 0) {
                 ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(PrimeRunnable.potentialPrimeNumberTestCompleted);
 
