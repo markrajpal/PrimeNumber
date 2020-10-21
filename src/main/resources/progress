@@ -335,3 +335,10 @@ To address testFindSmallestWithNineZeroes():
 
 10/01/2020
 Added a TODO
+
+10/21/2020
+No failures since the changes on 09/27/2020.
+Refactored code in order to accommodate more unit testing.
+Next steps:
+-We need to switch to Prime line 39 instead of 38.
+-However, when we make the switch, testRobustness() fails around 3 out of 100 times

@@ -36,46 +36,27 @@ public class Prime {
             //TODO the 2nd part of this if statement is inefficient
             //Waiting for a set a 10 to complete could take a long time, especially when we get into larger numbers
             if (PrimeRunnable.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0 && PrimeRunnable.threadsCompleted.compareTo(BigInteger.TEN) == 0) {
-                ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(PrimeRunnable.potentialPrimeNumberTestCompleted);
+            //if (PrimeRunnable.smallestPrimeFound.compareTo(BigInteger.ZERO) > 0) {
+                    ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>(PrimeRunnable.potentialPrimeNumberTestCompleted);
 
-                //TODO the warning indicates that temporaryListToSort is always null, DOES THIS CAUSE AN ISSUE?
+                    //TODO the warning indicates that temporaryListToSort is always null, DOES THIS CAUSE AN ISSUE?
 
-                //if (temporaryListToSort == null) {
-                //    continue;
-                //}
+                    //if (temporaryListToSort == null) {
+                    //    continue;
+                    //}
 
-                while (temporaryListToSort.remove(null)) {
-                    logger.debug("temporaryListToSort has a null element");
-                }
+                    BigInteger counter = smallestNumber.add(BigInteger.ONE).add(threadCounter).subtract(concurrentThreads);
+                    boolean smallestPrimeFoundValidated = isSmallestPrimeFoundValidated(counter, temporaryListToSort);
 
-                logger.info("size:" + temporaryListToSort.size());
-                Collections.sort(temporaryListToSort);
-
-                Iterator<BigInteger> i = temporaryListToSort.iterator();
-
-                BigInteger counter = smallestNumber.add(BigInteger.ONE).add(threadCounter).subtract(concurrentThreads);
-                boolean smallestPrimeFoundValidated = false;
-
-                while (i.hasNext() && !smallestPrimeFoundValidated) {
-                    BigInteger currentItem = i.next();
-                    if (counter.compareTo(currentItem) != 0) {
-                        counter = currentItem;
-                        //break;
+                    if (smallestPrimeFoundValidated) {
+                        logger.info("smallest number is: " + PrimeRunnable.smallestPrimeFound);
                     }
-                    if (counter.compareTo(PrimeRunnable.smallestPrimeFound) == 0) {
-                        smallestPrimeFoundValidated = true;
-                    } else {
-                        counter = counter.add(BigInteger.ONE);
-                    }
-                }
-                if (smallestPrimeFoundValidated) {
-                    logger.info("smallest number is: " + PrimeRunnable.smallestPrimeFound);
-                }
-                return PrimeRunnable.smallestPrimeFound;
+                    return PrimeRunnable.smallestPrimeFound;
 
-            } else if (PrimeRunnable.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
-                logger.info("currentPotentialPrime " + latestPotentialPrimeNumber);
-                threadCounter = initiateThreads(threadCounter, smallestNumber);
+                } else if (PrimeRunnable.threadsCompleted.compareTo(concurrentThreads) == 0 || threadCounter.compareTo(BigInteger.ZERO) == 0) {
+                    logger.info("currentPotentialPrime " + latestPotentialPrimeNumber);
+                    threadCounter = initiateThreads(threadCounter, smallestNumber);
+                }
             }
             //not sure why this is needed
 
@@ -90,6 +71,31 @@ public class Prime {
             */
 
         }
+
+    public boolean isSmallestPrimeFoundValidated(BigInteger counter, ArrayList<BigInteger> listToSort) {
+        while (listToSort.remove(null)) {
+            logger.debug("temporaryListToSort has a null element");
+        }
+
+        logger.info("size:" + listToSort.size());
+        Collections.sort(listToSort);
+
+        Iterator<BigInteger> i = listToSort.iterator();
+
+        boolean smallestPrimeFoundValidated = false;
+        while (i.hasNext() && !smallestPrimeFoundValidated) {
+            BigInteger currentItem = i.next();
+            if (counter.compareTo(currentItem) != 0) {
+                //counter = currentItem;
+                break;
+            }
+            if (counter.compareTo(PrimeRunnable.smallestPrimeFound) == 0) {
+                smallestPrimeFoundValidated = true;
+            } else {
+                counter = counter.add(BigInteger.ONE);
+            }
+        }
+        return smallestPrimeFoundValidated;
     }
 
     public BigInteger initiateThreads(BigInteger threadCounter, BigInteger smallestNumber) {

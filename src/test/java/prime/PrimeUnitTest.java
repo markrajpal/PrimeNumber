@@ -4,6 +4,7 @@ import org.junit.jupiter.api.RepeatedTest;
 import utilities.Helper;
 
 import java.math.BigInteger;
+import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -145,5 +146,56 @@ public class PrimeUnitTest {
     public void testInitiateThreads() {
         BigInteger numberOfThreads = prime.initiateThreads(BigInteger.ZERO, new BigInteger("1000"));
         assertEquals(numberOfThreads, new BigInteger(("10")));
+    }
+
+    @RepeatedTest(1)
+    public void testIsSmallestPrimeFoundA() {
+        ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>();
+        temporaryListToSort.add(new BigInteger("100000000002"));
+        temporaryListToSort.add(new BigInteger("100000000001"));
+
+        BigInteger counter = new BigInteger("100000000001");
+        assertFalse(prime.isSmallestPrimeFoundValidated(counter, temporaryListToSort));
+    }
+
+    @RepeatedTest(1)
+    public void testIsSmallestPrimeFoundB() {
+        ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>();
+        temporaryListToSort.add(new BigInteger("100000000003"));
+        temporaryListToSort.add(new BigInteger("100000000002"));
+        temporaryListToSort.add(new BigInteger("100000000001"));
+        PrimeRunnable.smallestPrimeFound = new BigInteger("100000000003");
+
+        BigInteger counter = new BigInteger("100000000001");
+        assertTrue(prime.isSmallestPrimeFoundValidated(counter, temporaryListToSort));
+    }
+
+    @RepeatedTest(1)
+    public void testIsSmallestPrimeFoundC() {
+        ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>();
+        temporaryListToSort.add(new BigInteger("100000000003"));
+        temporaryListToSort.add(new BigInteger("100000000001"));
+        PrimeRunnable.smallestPrimeFound = new BigInteger("100000000003");
+
+        BigInteger counter = new BigInteger("100000000001");
+        assertFalse(prime.isSmallestPrimeFoundValidated(counter, temporaryListToSort));
+    }
+
+    @RepeatedTest(1)
+    public void testIsSmallestPrimeFoundD() {
+        ArrayList<BigInteger> temporaryListToSort = new ArrayList<BigInteger>();
+        temporaryListToSort.add(new BigInteger("1000000001"));
+        temporaryListToSort.add(new BigInteger("1000000002"));
+        temporaryListToSort.add(new BigInteger("1000000003"));
+        temporaryListToSort.add(new BigInteger("1000000004"));
+        temporaryListToSort.add(new BigInteger("1000000005"));
+        temporaryListToSort.add(new BigInteger("1000000006"));
+        temporaryListToSort.add(new BigInteger("1000000008"));
+        temporaryListToSort.add(new BigInteger("1000000010"));
+        temporaryListToSort.add(new BigInteger("1000000009"));
+        PrimeRunnable.smallestPrimeFound = new BigInteger("1000000009");
+
+        BigInteger counter = new BigInteger("1000000001");
+        assertFalse(prime.isSmallestPrimeFoundValidated(counter, temporaryListToSort));
     }
 }
