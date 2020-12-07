@@ -25,7 +25,7 @@ public class PrimeRunnable extends Thread {
 
         threadInt = threadInt + 1;
         potentialPrimeNumberTestCompleted.add(potentialPrimeNumber);
-        logger.info("num added:" + potentialPrimeNumber);
+        //logger.info("num added:" + potentialPrimeNumber);
         if (threadInt == 10) {
             threadsCompleted = BigInteger.TEN;
         }

@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="refactoring">
-      <change afterPath="$PROJECT_DIR$/src/test/java/prime/RobustnessTest.java" afterDir="false" />
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="Added the robustness tests to the main build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/progress" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/progress" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/prime/PrimeLongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prime/PrimeRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/prime/PrimeRunnable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,7 @@
       <recent name="prime" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimeLongTest.testRobustness2">
+  <component name="RunManager" selected="JUnit.RobustnessTest.testRobustness2">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -279,23 +277,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeUnitTest.testIsSmallestPrimeFoundC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="prime" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="prime.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="prime" />
-      <option name="MAIN_CLASS_NAME" value="prime.PrimeUnitTest" />
-      <option name="METHOD_NAME" value="testIsSmallestPrimeFoundC" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PrimeUnitTest.testIsSmallestPrimeFoundD" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="prime" />
       <extension name="coverage">
@@ -307,6 +288,23 @@
       <option name="PACKAGE_NAME" value="prime" />
       <option name="MAIN_CLASS_NAME" value="prime.PrimeUnitTest" />
       <option name="METHOD_NAME" value="testIsSmallestPrimeFoundD" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RobustnessTest.testRobustness2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="prime" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="prime.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="prime" />
+      <option name="MAIN_CLASS_NAME" value="prime.RobustnessTest" />
+      <option name="METHOD_NAME" value="testRobustness2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -383,18 +381,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.PrimeUnitTest" />
-      <item itemvalue="JUnit.PrimeUnitTest.testIsSmallestPrimeFoundC" />
       <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
       <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
       <item itemvalue="JUnit.PrimeUnitTest.testIsSmallestPrimeFoundD" />
+      <item itemvalue="JUnit.RobustnessTest.testRobustness2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RobustnessTest.testRobustness2" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness2" />
         <item itemvalue="JUnit.PrimeLongTest.testRobustness" />
         <item itemvalue="JUnit.PrimeUnitTest" />
         <item itemvalue="JUnit.PrimeUnitTest.testIsSmallestPrimeFoundD" />
-        <item itemvalue="JUnit.PrimeUnitTest.testIsSmallestPrimeFoundC" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +459,8 @@
       <workItem from="1601606959492" duration="142000" />
       <workItem from="1601607271793" duration="334000" />
       <workItem from="1603258453295" duration="4880000" />
-      <workItem from="1607313334100" duration="684000" />
+      <workItem from="1607313334100" duration="748000" />
+      <workItem from="1607316795124" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -722,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603303364477</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Added the robustness tests to the main build">
+      <created>1607314088879</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1607314088879</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -781,7 +787,8 @@
     <MESSAGE value="addressed the recurring issues with testFindSmallestWithNineZeroes" />
     <MESSAGE value="added a TODO" />
     <MESSAGE value="refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring" />
+    <MESSAGE value="Added the robustness tests to the main build" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the robustness tests to the main build" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -793,26 +800,26 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601607026585" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1603303364240">
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1607314088556">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1603303364240" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1607313891365">
+    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314088556" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1607314113281">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607313891365" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1607313891365">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1607314113281">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607313891365" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1607313891364">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1607314113280">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607313891364" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1607313891365">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113280" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1607314113281">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607313891365" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1603567049692">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -829,10 +836,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state width="1227" height="376" key="GridCell.Tab.1.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1603567049692" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1603303367593">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1607314092233">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1603303367593" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314092233" />
     <state x="1000" y="449" key="extract.method.dialog" timestamp="1603299910926">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
