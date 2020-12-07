@@ -342,3 +342,6 @@ Refactored code in order to accommodate more unit testing.
 Next steps:
 -We need to switch to Prime line 39 instead of 38.
 -However, when we make the switch, testRobustness() fails around 3 out of 100 times
+
+12/06/2020
+Added the robustness tests to the main build.
