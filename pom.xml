@@ -107,6 +107,9 @@
                     <version>1.4.3</version>
                     <configuration>
                         <verbose>true</verbose>
+                        <excludedTestClasses>
+                            <param>prime.RobustnessTest</param>
+                        </excludedTestClasses>
                     </configuration>
                     <executions>
                         <execution>
