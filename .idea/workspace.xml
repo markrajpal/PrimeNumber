@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="reduced the amount of logging">
+    <list default="true" id="b28786f1-3902-4336-a8aa-1896348f8e5c" name="Default" comment="increased the timeout to 30 minutes because the build fails at 10 minutes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -459,7 +461,7 @@
       <workItem from="1601607271793" duration="334000" />
       <workItem from="1603258453295" duration="4880000" />
       <workItem from="1607313334100" duration="748000" />
-      <workItem from="1607316795124" duration="446000" />
+      <workItem from="1607316795124" duration="1861000" />
     </task>
     <task id="LOCAL-00001" summary="maven setup">
       <created>1562397112791</created>
@@ -734,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607316963077</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="increased the timeout to 30 minutes because the build fails at 10 minutes">
+      <created>1607357380149</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1607357380149</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -770,7 +779,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="maven setup" />
     <MESSAGE value="added PMD" />
     <MESSAGE value="mvn verify will fail if PMD finds any errors" />
     <MESSAGE value="added SpotBugs" />
@@ -795,7 +803,8 @@
     <MESSAGE value="refactoring" />
     <MESSAGE value="Added the robustness tests to the main build" />
     <MESSAGE value="reduced the amount of logging" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduced the amount of logging" />
+    <MESSAGE value="increased the timeout to 30 minutes because the build fails at 10 minutes" />
+    <option name="LAST_COMMIT_MESSAGE" value="increased the timeout to 30 minutes because the build fails at 10 minutes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -807,26 +816,26 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state x="950" y="433" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1601607026585" />
-    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1607316961787">
+    <state x="1461" y="178" key="CommitChangelistDialog2" timestamp="1607360805567">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607316961787" />
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1607314113281">
+    <state x="1461" y="178" key="CommitChangelistDialog2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607360805567" />
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom" timestamp="1607360670583">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
-    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1607314113281">
+    <state width="1186" height="376" key="GridCell.Tab.0.bottom/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607360670583" />
+    <state width="1186" height="376" key="GridCell.Tab.0.center" timestamp="1607360670583">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
-    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1607314113280">
+    <state width="1186" height="376" key="GridCell.Tab.0.center/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607360670583" />
+    <state width="1186" height="376" key="GridCell.Tab.0.left" timestamp="1607360670582">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113280" />
-    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1607314113281">
+    <state width="1186" height="376" key="GridCell.Tab.0.left/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607360670582" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right" timestamp="1607360670583">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607314113281" />
+    <state width="1186" height="376" key="GridCell.Tab.0.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607360670583" />
     <state width="1227" height="376" key="GridCell.Tab.1.bottom" timestamp="1603567049692">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
@@ -843,10 +852,10 @@
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
     <state width="1227" height="376" key="GridCell.Tab.1.right/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1603567049692" />
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1607316968694">
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2" timestamp="1607357382420">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
-    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607316968694" />
+    <state x="862" y="438" key="Vcs.Push.Dialog.v2/-1920.263.1920.1177/2560.263.1920.1177/0.23.2560.1349@0.23.2560.1349" timestamp="1607357382420" />
     <state x="1000" y="449" key="extract.method.dialog" timestamp="1603299910926">
       <screen x="0" y="23" width="2560" height="1349" />
     </state>
