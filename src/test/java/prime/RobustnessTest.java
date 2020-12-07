@@ -1,6 +1,5 @@
 package prime;
 
-import org.apache.log4j.Logger;
 import org.junit.jupiter.api.RepeatedTest;
 
 /**
@@ -10,8 +9,6 @@ public class RobustnessTest {
 
     Prime prime = new Prime();
     PrimeRunnable primeRunnable = new PrimeRunnable();
-
-    final static private Logger logger = Logger.getLogger(RobustnessTest.class);
 
     @RepeatedTest(100)
     public void testRobustness() {

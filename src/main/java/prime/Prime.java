@@ -74,7 +74,7 @@ public class Prime {
 
     public boolean isSmallestPrimeFoundValidated(BigInteger counter, ArrayList<BigInteger> listToSort) {
         while (listToSort.remove(null)) {
-            //logger.debug("temporaryListToSort has a null element");
+            logger.debug("temporaryListToSort has a null element");
         }
 
         logger.info("size:" + listToSort.size());
