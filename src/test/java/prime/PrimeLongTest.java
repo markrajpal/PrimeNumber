@@ -1,6 +1,5 @@
 package prime;
 
-import org.apache.log4j.Logger;
 import org.junit.jupiter.api.RepeatedTest;
 
 import java.math.BigInteger;
@@ -14,8 +13,6 @@ public class PrimeLongTest  {
 
     Prime prime = new Prime();
     PrimeRunnable primeRunnable = new PrimeRunnable();
-
-    final static private Logger logger = Logger.getLogger(PrimeLongTest.class);
 
     @RepeatedTest(1)
     public void testFindSmallestWithNZeroes() {

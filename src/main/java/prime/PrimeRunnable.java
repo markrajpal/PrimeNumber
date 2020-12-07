@@ -1,7 +1,5 @@
 package prime;
 
-import org.apache.log4j.Logger;
-
 import java.math.BigInteger;
 import java.util.ArrayList;
 
@@ -15,8 +13,6 @@ public class PrimeRunnable extends Thread {
     public static int threadInt = 0;
     public BigInteger potentialPrimeNumber;
     public static final ArrayList<BigInteger> potentialPrimeNumberTestCompleted = new ArrayList<BigInteger>();
-
-    final static private Logger logger = Logger.getLogger(PrimeRunnable.class);
 
     public void run() {
         if (isPrime(potentialPrimeNumber)) {
